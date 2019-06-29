@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.avnis.scarlet.Quiz"
+    android:background="@drawable/g">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_navig"
+        android:background="#00000000" />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/l"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="QUIZ"
+        android:id="@+id/textView2"
+        android:textAlignment="center"
+        android:textColor="#077648"
+        android:textSize="30sp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Q)  How many layers does OSI Reference Model has?"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/edit_radius"
+        android:layout_marginBottom="15dp"
+        android:textSize="25sp"
+        android:textColor="#f1f1f1" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contextClickable="false"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/quiz_radioButton"
+            android:layout_marginBottom="10dp"
+            android:checked="false"
+            android:contextClickable="false"
+            android:textSize="20sp"
+            android:textColor="#f1f1f1"
+            android:layout_marginLeft="20dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/quiz_radioButton2"
+            android:layout_marginBottom="10dp"
+            android:checked="false"
+            android:contextClickable="false"
+            android:textSize="20sp"
+            android:textColor="#f1f1f1"
+            android:layout_marginLeft="20dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/quiz_radioButton3"
+            android:layout_marginBottom="10dp"
+            android:checked="false"
+            android:contextClickable="false"
+            android:textSize="20sp"
+            android:textColor="#f1f1f1"
+            android:layout_marginLeft="20dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/quiz_radioButton4"
+            android:layout_marginBottom="10dp"
+            android:checked="false"
+            android:contextClickable="false"
+            android:textSize="20sp"
+            android:textColor="#f1f1f1"
+            android:layout_marginLeft="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/button4"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/accent_material_light"
+        android:textSize="22sp"
+        android:background="@drawable/radius" />
+
+
+</RelativeLayout>

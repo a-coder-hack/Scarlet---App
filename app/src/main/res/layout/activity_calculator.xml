@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.avnis.scarlet.Calculator"
+    android:background="@drawable/g">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cal_imageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_navig"
+        android:background="#00000000" />
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/l"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CALCULATOR"
+        android:id="@+id/textView2"
+        android:textAlignment="center"
+        android:textColor="#077648"
+        android:textSize="30sp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:adjustViewBounds="true" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText8"
+        android:background="@drawable/no_radius"
+        android:autoText="false"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textColor="#f1f1f1"
+        android:layout_marginRight="2dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText9"
+        android:background="@drawable/no_radius"
+        android:autoText="false"
+        android:layout_alignTop="@+id/editText8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textColor="#f1f1f1" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/textView3"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/editText8"
+        android:layout_toEndOf="@+id/editText8"
+        android:textColor="#f1f1f1"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView4"
+        android:textSize="35sp"
+        android:textColor="#f1f1f1"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:textAlignment="center" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:text="MULTI"
+        android:id="@+id/cal_button"
+        android:textColor="@color/accent_material_light"
+        android:background="@drawable/radius"
+        android:layout_below="@+id/cal_button5"
+        android:layout_alignLeft="@+id/cal_button5"
+        android:layout_alignStart="@+id/cal_button5"
+        android:textSize="17sp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:text="DIV"
+        android:id="@+id/cal_button4"
+        android:textColor="@color/accent_material_light"
+        android:background="@drawable/radius"
+        android:layout_below="@+id/cal_button8"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:textSize="17sp" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:text="ADD"
+        android:id="@+id/cal_button5"
+        android:textColor="@color/accent_material_light"
+        android:background="@drawable/radius"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toStartOf="@+id/imageView2"
+        android:layout_marginBottom="15dp"
+        android:textSize="17sp" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:text="RESET"
+        android:id="@+id/cal_button6"
+        android:textColor="@color/abc_tint_spinner"
+        android:background="@drawable/cal_edit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:textSize="17sp" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:text="RESULT"
+        android:id="@+id/cal_button7"
+        android:textColor="@color/abc_tint_spinner"
+        android:background="@drawable/cal_edit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:textSize="17sp" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:text="SUB"
+        android:id="@+id/cal_button8"
+        android:textColor="@color/accent_material_light"
+        android:background="@drawable/radius"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginBottom="15dp"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView2"
+        android:layout_alignBottom="@+id/editText8"
+        android:autoText="false"
+        android:textSize="37sp"
+        android:layout_toLeftOf="@+id/editText9"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:textAlignment="center" />
+</RelativeLayout>

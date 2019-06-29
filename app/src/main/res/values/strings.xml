@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Scarlet</string>
+    <string name="login_button">LOGIN</string>
+    <string name="signup_button">SIGNUP</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="signup">SIGNUP</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_quiz">Quiz</string>
+    <string name="title_activity_result">Result</string>
+    <string name="next">next</string>
+</resources>
